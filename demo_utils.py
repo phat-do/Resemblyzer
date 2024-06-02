@@ -107,7 +107,7 @@ def plot_projections(embeds, speakers, ax=None, colors=None, markers=None, legen
         ax.scatter(*speaker_projs.T, c=[colors[i]], marker=marker, label=label)
 
     if legend:
-        ax.legend(title="Speakers", ncol=2)
+        ax.legend(title="Speakers", ncol=2, loc='center left', bbox_to_anchor=(1, 0.5))
     ax.set_title(title)
     ax.set_xticks([])
     ax.set_yticks([])
